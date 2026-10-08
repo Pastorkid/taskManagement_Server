@@ -6,6 +6,7 @@ res.status(404);
 next(error);
 }
 
+
 //  Error Handler
 
 const errorHandler=(err,req,res,next)=>{
