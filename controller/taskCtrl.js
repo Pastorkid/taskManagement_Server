@@ -11,7 +11,7 @@ const validateAndNormalizeTags = (tags) => {
   }
   const normalized = tags.map((t) => {
     if (typeof t !== 'string') {
-      throw new Error('Each tag must be a strings');
+      throw new Error('Each tag must be a string');
     }
     const trimmed = t.trim();
     const match = ALLOWED_TAGS.find((allowed) => allowed.toLowerCase() === trimmed.toLowerCase());
